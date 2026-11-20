@@ -95,6 +95,11 @@ def main():
     st = json.loads(STATE.read_text(encoding="utf-8"))
     for k, d in (("taken", []), ("recent", []), ("recent_gender", []), ("booked", {}), ("done", {})): st.setdefault(k, d)
     now = dt.datetime.now(TZ)
+    probe = next((pid for b in st["booked"].values() for pid in b["posts"]), None)
+    if probe:   # proves the Buffer key works even when there is nothing to book this hour
+        ok = ((gql(key, STATUS, {"id": probe}).get("data") or {}).get("post") or {}).get("status")
+        print("buffer key check:", "OK" if ok else "FAILED", flush=True)
+        if not ok: log("Buffer key check FAILED - is the BUFFER_API_KEY secret still valid?")
     check_posted(key, st, now)
     while True:
         future = sum(1 for b in st["booked"].values()
