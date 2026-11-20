@@ -21,7 +21,9 @@
   "2026-11-22T01:00:00+01:00",
   "2026-11-22T17:00:00+01:00",
   "2026-11-22T21:00:00+01:00",
-  "2026-11-23T01:00:00+01:00"
+  "2026-11-23T01:00:00+01:00",
+  "2026-11-23T17:00:00+01:00",
+  "2026-11-23T21:00:00+01:00"
  ],
  "recent": [
   "Kai Cenat",
@@ -30,10 +32,10 @@
   "Freyja",
   "Kai Cenat",
   "Freyja",
-  "Kai Cenat",
-  "Freyja",
   "Peanut",
-  "Mikkaa"
+  "Mikkaa",
+  "Speed",
+  "Freyja"
  ],
  "recent_gender": [
   "m",
@@ -54,20 +56,6 @@
    "posts": {
     "6aff28f04a72961e423b899a": {
      "service": "instagram",
-     "status": "scheduled"
-    }
-   }
-  },
-  "freyja_022226": {
-   "slot": "2026-11-20T17:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_022226.mp4",
-   "posts": {
-    "6aff271ed2e41ff730d1185a": {
-     "service": "instagram",
-     "status": "scheduled"
-    },
-    "6aff271fe261b2bb57a1cc46": {
-     "service": "youtube",
      "status": "scheduled"
     }
    }
@@ -118,24 +106,6 @@
     }
    }
   },
-  "kai_000477": {
-   "slot": "2026-11-20T21:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/kai_000477.mp4",
-   "posts": {
-    "6aff286243069e3f1cbffe13": {
-     "service": "instagram",
-     "status": "scheduled"
-    },
-    "6aff2864be5295ac8b6c7477": {
-     "service": "youtube",
-     "status": "scheduled"
-    },
-    "6b004e6dfc5b97f0f80ca2dd": {
-     "service": "tiktok",
-     "status": "scheduled"
-    }
-   }
-  },
   "kai_000942": {
    "slot": "2026-11-22T01:00:00+01:00",
    "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/kai_000942.mp4",
@@ -173,12 +143,87 @@
      "status": "scheduled"
     }
    }
+  },
+  "speed_038340": {
+   "slot": "2026-11-23T17:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/speed_038340.mp4",
+   "posts": {
+    "6b00c69420a2d09a0ab49bbc": {
+     "service": "instagram",
+     "status": "scheduled"
+    },
+    "6b00c6949ffbc8503cdc9cf6": {
+     "service": "youtube",
+     "status": "scheduled"
+    }
+   }
+  },
+  "freyja_008972": {
+   "slot": "2026-11-23T21:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_008972.mp4",
+   "posts": {
+    "6b00c69520a2d09a0ab49c3b": {
+     "service": "instagram",
+     "status": "scheduled"
+    },
+    "6b00c6969ffbc8503cdc9d6e": {
+     "service": "tiktok",
+     "status": "scheduled"
+    },
+    "6b00c696d9cbb430a1fe1b6b": {
+     "service": "youtube",
+     "status": "scheduled"
+    }
+   }
   }
  },
- "done": {},
+ "done": {
+  "freyja_022226": {
+   "slot": "2026-11-20T17:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_022226.mp4",
+   "posts": {
+    "6aff271ed2e41ff730d1185a": {
+     "service": "instagram",
+     "status": "error",
+     "link": null,
+     "error": "It looks like Buffer has lost authorization to post on your behalf. Please refresh your channel to resume scheduling."
+    },
+    "6aff271fe261b2bb57a1cc46": {
+     "service": "youtube",
+     "status": "sent",
+     "link": "https://www.youtube.com/shorts/RGAOXfoTpL4",
+     "error": null
+    }
+   }
+  },
+  "kai_000477": {
+   "slot": "2026-11-20T21:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/kai_000477.mp4",
+   "posts": {
+    "6aff286243069e3f1cbffe13": {
+     "service": "instagram",
+     "status": "error",
+     "link": null,
+     "error": "It looks like Buffer has lost authorization to post on your behalf. Please refresh your channel to resume scheduling."
+    },
+    "6aff2864be5295ac8b6c7477": {
+     "service": "youtube",
+     "status": "sent",
+     "link": "https://www.youtube.com/shorts/sU31qSmKM5A",
+     "error": null
+    },
+    "6b004e6dfc5b97f0f80ca2dd": {
+     "service": "tiktok",
+     "status": "sent",
+     "link": "https://tiktok.com/@gtaviclips782/video/7710346297777130753",
+     "error": null
+    }
+   }
+  }
+ },
  "status": {
-  "checked": "2026-11-20T15:26+01:00",
-  "reels_waiting": 59,
+  "checked": "2026-11-20T23:15+01:00",
+  "reels_waiting": 57,
   "booked": 9
  }
 }
