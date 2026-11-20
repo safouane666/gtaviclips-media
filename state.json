@@ -1,0 +1,179 @@
+{
+ "taken": [
+  "2026-11-19T02:00:00+01:00",
+  "2026-11-19T03:00:00+01:00",
+  "2026-11-19T04:00:00+01:00",
+  "2026-11-19T05:00:00+01:00",
+  "2026-11-19T06:00:00+01:00",
+  "2026-11-19T07:00:00+01:00",
+  "2026-11-19T08:00:00+01:00",
+  "2026-11-19T09:00:00+01:00",
+  "2026-11-19T10:00:00+01:00",
+  "2026-11-19T13:00:00+01:00",
+  "2026-11-19T17:00:00+01:00",
+  "2026-11-19T21:00:00+01:00",
+  "2026-11-20T01:00:00+01:00",
+  "2026-11-20T17:00:00+01:00",
+  "2026-11-20T21:00:00+01:00",
+  "2026-11-21T01:00:00+01:00",
+  "2026-11-21T17:00:00+01:00",
+  "2026-11-21T21:00:00+01:00",
+  "2026-11-22T01:00:00+01:00",
+  "2026-11-22T17:00:00+01:00",
+  "2026-11-22T21:00:00+01:00",
+  "2026-11-23T01:00:00+01:00"
+ ],
+ "recent": [
+  "Kai Cenat",
+  "Freyja",
+  "Kai Cenat",
+  "Freyja",
+  "Kai Cenat",
+  "Freyja",
+  "Kai Cenat",
+  "Freyja",
+  "Peanut",
+  "Mikkaa"
+ ],
+ "recent_gender": [
+  "m",
+  "f",
+  "m",
+  "f",
+  "m",
+  "f",
+  "m",
+  "f",
+  "m",
+  "f"
+ ],
+ "booked": {
+  "freyja_021451": {
+   "slot": "2026-11-21T01:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_021451.mp4",
+   "posts": {
+    "6aff28f04a72961e423b899a": {
+     "service": "instagram",
+     "status": "scheduled"
+    }
+   }
+  },
+  "freyja_022226": {
+   "slot": "2026-11-20T17:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_022226.mp4",
+   "posts": {
+    "6aff271ed2e41ff730d1185a": {
+     "service": "instagram",
+     "status": "scheduled"
+    },
+    "6aff271fe261b2bb57a1cc46": {
+     "service": "youtube",
+     "status": "scheduled"
+    }
+   }
+  },
+  "freyja_024453": {
+   "slot": "2026-11-21T21:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_024453.mp4",
+   "posts": {
+    "6aff29ee4a72961e423bfd82": {
+     "service": "instagram",
+     "status": "scheduled"
+    },
+    "6aff29f0c271940a961cb5e5": {
+     "service": "youtube",
+     "status": "scheduled"
+    },
+    "6b004e6dfc5b97f0f80ca30e": {
+     "service": "tiktok",
+     "status": "scheduled"
+    }
+   }
+  },
+  "freyja_029092": {
+   "slot": "2026-11-22T17:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_029092.mp4",
+   "posts": {
+    "6aff2aa7e888354b49b2227e": {
+     "service": "instagram",
+     "status": "scheduled"
+    },
+    "6aff2aa8e7aaeee2c6d33b66": {
+     "service": "youtube",
+     "status": "scheduled"
+    }
+   }
+  },
+  "kai_000410": {
+   "slot": "2026-11-21T17:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/kai_000410.mp4",
+   "posts": {
+    "6aff29afecf8848901853ec7": {
+     "service": "instagram",
+     "status": "scheduled"
+    },
+    "6aff29b0c271940a961c9371": {
+     "service": "youtube",
+     "status": "scheduled"
+    }
+   }
+  },
+  "kai_000477": {
+   "slot": "2026-11-20T21:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/kai_000477.mp4",
+   "posts": {
+    "6aff286243069e3f1cbffe13": {
+     "service": "instagram",
+     "status": "scheduled"
+    },
+    "6aff2864be5295ac8b6c7477": {
+     "service": "youtube",
+     "status": "scheduled"
+    },
+    "6b004e6dfc5b97f0f80ca2dd": {
+     "service": "tiktok",
+     "status": "scheduled"
+    }
+   }
+  },
+  "kai_000942": {
+   "slot": "2026-11-22T01:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/kai_000942.mp4",
+   "posts": {
+    "6aff2a3fc271940a961cc829": {
+     "service": "instagram",
+     "status": "scheduled"
+    }
+   }
+  },
+  "missmikkaa_003069": {
+   "slot": "2026-11-23T01:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/missmikkaa_003069.mp4",
+   "posts": {
+    "6aff55d97c739ea0add8c9f3": {
+     "service": "instagram",
+     "status": "scheduled"
+    }
+   }
+  },
+  "peanut_003627": {
+   "slot": "2026-11-22T21:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/peanut_003627.mp4",
+   "posts": {
+    "6aff55a56eef0cb67e4e9724": {
+     "service": "instagram",
+     "status": "scheduled"
+    },
+    "6aff55a7e62825b989036e23": {
+     "service": "youtube",
+     "status": "scheduled"
+    },
+    "6b004e6efc5b97f0f80ca363": {
+     "service": "tiktok",
+     "status": "scheduled"
+    }
+   }
+  }
+ },
+ "done": {}
+}

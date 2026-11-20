@@ -1,0 +1,26 @@
+name: schedule-reels
+on:
+  schedule:
+    - cron: "17 * * * *"      # every hour; Buffer does the actual posting at the booked times
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: scheduler, cancel-in-progress: false }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Top up Buffer queue
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scheduler.py
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "reels-bot"
+          git config user.email "reels-bot@users.noreply.github.com"
+          git add state.json posting.log
+          git diff --cached --quiet || (git commit -m "scheduler run" && git push)
