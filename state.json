@@ -24,11 +24,11 @@
   "2026-11-23T01:00:00+01:00",
   "2026-11-23T17:00:00+01:00",
   "2026-11-23T21:00:00+01:00",
-  "2026-11-24T17:00:00+01:00"
+  "2026-11-24T17:00:00+01:00",
+  "2026-11-24T21:00:00+01:00",
+  "2026-11-25T17:00:00+01:00"
  ],
  "recent": [
-  "Freyja",
-  "Kai Cenat",
   "Freyja",
   "Kai Cenat",
   "Freyja",
@@ -36,7 +36,9 @@
   "Mikkaa",
   "Speed",
   "Freyja",
-  "Kai Cenat"
+  "Kai Cenat",
+  "Mikkaa",
+  "Speed"
  ],
  "recent_gender": [
   "f",
@@ -51,24 +53,6 @@
   "m"
  ],
  "booked": {
-  "freyja_024453": {
-   "slot": "2026-11-21T21:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_024453.mp4",
-   "posts": {
-    "6aff29ee4a72961e423bfd82": {
-     "service": "instagram",
-     "status": "scheduled"
-    },
-    "6aff29f0c271940a961cb5e5": {
-     "service": "youtube",
-     "status": "scheduled"
-    },
-    "6b004e6dfc5b97f0f80ca30e": {
-     "service": "tiktok",
-     "status": "scheduled"
-    }
-   }
-  },
   "freyja_029092": {
    "slot": "2026-11-22T17:00:00+01:00",
    "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_029092.mp4",
@@ -78,20 +62,6 @@
      "status": "scheduled"
     },
     "6aff2aa8e7aaeee2c6d33b66": {
-     "service": "youtube",
-     "status": "scheduled"
-    }
-   }
-  },
-  "kai_000410": {
-   "slot": "2026-11-21T17:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/kai_000410.mp4",
-   "posts": {
-    "6aff29afecf8848901853ec7": {
-     "service": "instagram",
-     "status": "scheduled"
-    },
-    "6aff29b0c271940a961c9371": {
      "service": "youtube",
      "status": "scheduled"
     }
@@ -180,6 +150,38 @@
      "status": "scheduled"
     }
    }
+  },
+  "missmikkaa_024299": {
+   "slot": "2026-11-24T21:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/missmikkaa_024299.mp4",
+   "posts": {
+    "6b01fa7bd864a0110570ba4f": {
+     "service": "instagram",
+     "status": "scheduled"
+    },
+    "6b01fa7cd5eabfb8cc5a4cab": {
+     "service": "tiktok",
+     "status": "scheduled"
+    },
+    "6b01fa7c846b0ee907356de0": {
+     "service": "youtube",
+     "status": "scheduled"
+    }
+   }
+  },
+  "speed_041070": {
+   "slot": "2026-11-25T17:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/speed_041070.mp4",
+   "posts": {
+    "6b01fa7d8bd84d5966165e68": {
+     "service": "instagram",
+     "status": "scheduled"
+    },
+    "6b01fa7dd864a0110570bb14": {
+     "service": "youtube",
+     "status": "scheduled"
+    }
+   }
   }
  },
  "done": {
@@ -236,11 +238,53 @@
      "error": "It looks like Buffer has lost authorization to post on your behalf. Please refresh your channel to resume scheduling."
     }
    }
+  },
+  "freyja_024453": {
+   "slot": "2026-11-21T21:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_024453.mp4",
+   "posts": {
+    "6aff29ee4a72961e423bfd82": {
+     "service": "instagram",
+     "status": "error",
+     "link": null,
+     "error": "It looks like Buffer has lost authorization to post on your behalf. Please refresh your channel to resume scheduling."
+    },
+    "6aff29f0c271940a961cb5e5": {
+     "service": "youtube",
+     "status": "sent",
+     "link": "https://www.youtube.com/shorts/2CtA1qnDEmE",
+     "error": null
+    },
+    "6b004e6dfc5b97f0f80ca30e": {
+     "service": "tiktok",
+     "status": "sent",
+     "link": "https://tiktok.com/@gtaviclips782/video/7710717605354523924",
+     "error": null
+    }
+   }
+  },
+  "kai_000410": {
+   "slot": "2026-11-21T17:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/kai_000410.mp4",
+   "posts": {
+    "6aff29afecf8848901853ec7": {
+     "service": "instagram",
+     "status": "error",
+     "link": null,
+     "error": "It looks like Buffer has lost authorization to post on your behalf. Please refresh your channel to resume scheduling."
+    },
+    "6aff29b0c271940a961c9371": {
+     "service": "youtube",
+     "status": "error",
+     "link": null,
+     "error": "The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later."
+    }
+   }
   }
  },
  "status": {
-  "checked": "2026-11-21T13:46+01:00",
-  "reels_waiting": 56,
+  "checked": "2026-11-21T21:09+01:00",
+  "reels_waiting": 54,
   "booked": 9
  }
 }
