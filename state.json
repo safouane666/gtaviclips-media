@@ -28,10 +28,10 @@
   "2026-11-24T21:00:00+01:00",
   "2026-11-25T17:00:00+01:00",
   "2026-11-25T21:00:00+01:00",
-  "2026-11-26T17:00:00+01:00"
+  "2026-11-26T17:00:00+01:00",
+  "2026-11-26T21:00:00+01:00"
  ],
  "recent": [
-  "Freyja",
   "Peanut",
   "Mikkaa",
   "Speed",
@@ -40,10 +40,10 @@
   "Mikkaa",
   "Speed",
   "Freyja",
-  "Asmongold"
+  "Asmongold",
+  "Mikkaa"
  ],
  "recent_gender": [
-  "f",
   "m",
   "f",
   "m",
@@ -52,7 +52,8 @@
   "f",
   "m",
   "f",
-  "m"
+  "m",
+  "f"
  ],
  "booked": {
   "missmikkaa_003069": {
@@ -61,24 +62,6 @@
    "posts": {
     "6aff55d97c739ea0add8c9f3": {
      "service": "instagram",
-     "status": "scheduled"
-    }
-   }
-  },
-  "peanut_003627": {
-   "slot": "2026-11-22T21:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/peanut_003627.mp4",
-   "posts": {
-    "6aff55a56eef0cb67e4e9724": {
-     "service": "instagram",
-     "status": "scheduled"
-    },
-    "6aff55a7e62825b989036e23": {
-     "service": "youtube",
-     "status": "scheduled"
-    },
-    "6b004e6efc5b97f0f80ca363": {
-     "service": "tiktok",
      "status": "scheduled"
     }
    }
@@ -188,6 +171,24 @@
      "status": "scheduled"
     },
     "6b0316eebf5d5a73b6a405e0": {
+     "service": "youtube",
+     "status": "scheduled"
+    }
+   }
+  },
+  "missmikkaa_004322": {
+   "slot": "2026-11-26T21:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/missmikkaa_004322.mp4",
+   "posts": {
+    "6b036d0dcc364169c18e08ee": {
+     "service": "instagram",
+     "status": "scheduled"
+    },
+    "6b036d0dbf5d5a73b6c88721": {
+     "service": "tiktok",
+     "status": "scheduled"
+    },
+    "6b036d0ed5eabfb8cce50ae7": {
      "service": "youtube",
      "status": "scheduled"
     }
@@ -320,11 +321,35 @@
      "error": null
     }
    }
+  },
+  "peanut_003627": {
+   "slot": "2026-11-22T21:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/peanut_003627.mp4",
+   "posts": {
+    "6aff55a56eef0cb67e4e9724": {
+     "service": "instagram",
+     "status": "error",
+     "link": null,
+     "error": "It looks like Buffer has lost authorization to post on your behalf. Please refresh your channel to resume scheduling."
+    },
+    "6aff55a7e62825b989036e23": {
+     "service": "youtube",
+     "status": "error",
+     "link": null,
+     "error": "The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later."
+    },
+    "6b004e6efc5b97f0f80ca363": {
+     "service": "tiktok",
+     "status": "sent",
+     "link": "https://tiktok.com/@gtaviclips782/video/7711088907118546184",
+     "error": null
+    }
+   }
   }
  },
  "status": {
-  "checked": "2026-11-22T17:23+01:00",
-  "reels_waiting": 52,
+  "checked": "2026-11-22T23:30+01:00",
+  "reels_waiting": 51,
   "booked": 9
  }
 }
