@@ -27,10 +27,10 @@
   "2026-11-24T17:00:00+01:00",
   "2026-11-24T21:00:00+01:00",
   "2026-11-25T17:00:00+01:00",
-  "2026-11-25T21:00:00+01:00"
+  "2026-11-25T21:00:00+01:00",
+  "2026-11-26T17:00:00+01:00"
  ],
  "recent": [
-  "Kai Cenat",
   "Freyja",
   "Peanut",
   "Mikkaa",
@@ -39,10 +39,10 @@
   "Kai Cenat",
   "Mikkaa",
   "Speed",
-  "Freyja"
+  "Freyja",
+  "Asmongold"
  ],
  "recent_gender": [
-  "m",
   "f",
   "m",
   "f",
@@ -51,23 +51,10 @@
   "m",
   "f",
   "m",
-  "f"
+  "f",
+  "m"
  ],
  "booked": {
-  "freyja_029092": {
-   "slot": "2026-11-22T17:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_029092.mp4",
-   "posts": {
-    "6aff2aa7e888354b49b2227e": {
-     "service": "instagram",
-     "status": "scheduled"
-    },
-    "6aff2aa8e7aaeee2c6d33b66": {
-     "service": "youtube",
-     "status": "scheduled"
-    }
-   }
-  },
   "missmikkaa_003069": {
    "slot": "2026-11-23T01:00:00+01:00",
    "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/missmikkaa_003069.mp4",
@@ -191,6 +178,20 @@
      "status": "scheduled"
     }
    }
+  },
+  "zackrawrr_008404": {
+   "slot": "2026-11-26T17:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/zackrawrr_008404.mp4",
+   "posts": {
+    "6b0316edcc364169c16a16c5": {
+     "service": "instagram",
+     "status": "scheduled"
+    },
+    "6b0316eebf5d5a73b6a405e0": {
+     "service": "youtube",
+     "status": "scheduled"
+    }
+   }
   }
  },
  "done": {
@@ -301,11 +302,29 @@
      "error": "It looks like Buffer has lost authorization to post on your behalf. Please refresh your channel to resume scheduling."
     }
    }
+  },
+  "freyja_029092": {
+   "slot": "2026-11-22T17:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_029092.mp4",
+   "posts": {
+    "6aff2aa7e888354b49b2227e": {
+     "service": "instagram",
+     "status": "error",
+     "link": null,
+     "error": "It looks like Buffer has lost authorization to post on your behalf. Please refresh your channel to resume scheduling."
+    },
+    "6aff2aa8e7aaeee2c6d33b66": {
+     "service": "youtube",
+     "status": "sent",
+     "link": "https://www.youtube.com/shorts/fIWpoyUfH2A",
+     "error": null
+    }
+   }
   }
  },
  "status": {
-  "checked": "2026-11-22T09:06+01:00",
-  "reels_waiting": 53,
+  "checked": "2026-11-22T17:23+01:00",
+  "reels_waiting": 52,
   "booked": 9
  }
 }
