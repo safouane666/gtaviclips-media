@@ -29,10 +29,10 @@
   "2026-11-25T17:00:00+01:00",
   "2026-11-25T21:00:00+01:00",
   "2026-11-26T17:00:00+01:00",
-  "2026-11-26T21:00:00+01:00"
+  "2026-11-26T21:00:00+01:00",
+  "2026-11-27T17:00:00+01:00"
  ],
  "recent": [
-  "Peanut",
   "Mikkaa",
   "Speed",
   "Freyja",
@@ -41,10 +41,10 @@
   "Speed",
   "Freyja",
   "Asmongold",
-  "Mikkaa"
+  "Mikkaa",
+  "Kai Cenat"
  ],
  "recent_gender": [
-  "m",
   "f",
   "m",
   "f",
@@ -53,19 +53,10 @@
   "m",
   "f",
   "m",
-  "f"
+  "f",
+  "m"
  ],
  "booked": {
-  "missmikkaa_003069": {
-   "slot": "2026-11-23T01:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/missmikkaa_003069.mp4",
-   "posts": {
-    "6aff55d97c739ea0add8c9f3": {
-     "service": "instagram",
-     "status": "scheduled"
-    }
-   }
-  },
   "speed_038340": {
    "slot": "2026-11-23T17:00:00+01:00",
    "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/speed_038340.mp4",
@@ -189,6 +180,20 @@
      "status": "scheduled"
     },
     "6b036d0ed5eabfb8cce50ae7": {
+     "service": "youtube",
+     "status": "scheduled"
+    }
+   }
+  },
+  "kai_006447": {
+   "slot": "2026-11-27T17:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/kai_006447.mp4",
+   "posts": {
+    "6b03b718c72676f5e9828469": {
+     "service": "instagram",
+     "status": "scheduled"
+    },
+    "6b03b719a6de38de9eb77b9f": {
      "service": "youtube",
      "status": "scheduled"
     }
@@ -345,11 +350,23 @@
      "error": null
     }
    }
+  },
+  "missmikkaa_003069": {
+   "slot": "2026-11-23T01:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/missmikkaa_003069.mp4",
+   "posts": {
+    "6aff55d97c739ea0add8c9f3": {
+     "service": "instagram",
+     "status": "error",
+     "link": null,
+     "error": "It looks like Buffer has lost authorization to post on your behalf. Please refresh your channel to resume scheduling."
+    }
+   }
   }
  },
  "status": {
-  "checked": "2026-11-22T23:30+01:00",
-  "reels_waiting": 51,
+  "checked": "2026-11-23T04:46+01:00",
+  "reels_waiting": 50,
   "booked": 9
  }
 }
