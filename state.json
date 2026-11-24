@@ -25,48 +25,29 @@
   "2026-11-23T17:00:00+01:00",
   "2026-11-23T21:00:00+01:00",
   "2026-11-24T17:00:00+01:00",
-  "2026-11-24T21:00:00+01:00",
-  "2026-11-25T17:00:00+01:00",
-  "2026-11-25T21:00:00+01:00",
-  "2026-11-26T17:00:00+01:00",
-  "2026-11-26T21:00:00+01:00",
-  "2026-11-27T17:00:00+01:00",
-  "2026-11-27T21:00:00+01:00",
-  "2026-11-28T17:00:00+01:00"
+  "2026-11-24T21:00:00+01:00"
  ],
  "recent": [
   "Freyja",
-  "Kai Cenat",
   "Mikkaa",
   "Speed",
   "Freyja",
-  "Asmongold",
-  "Mikkaa",
   "Kai Cenat",
-  "Freyja",
-  "Speed"
+  "Mikkaa"
  ],
  "recent_gender": [
   "f",
-  "m",
   "f",
   "m",
   "f",
   "m",
-  "f",
-  "m",
-  "f",
-  "m"
+  "f"
  ],
  "booked": {
   "kai_018832": {
    "slot": "2026-11-24T17:00:00+01:00",
    "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/kai_018832.mp4",
    "posts": {
-    "6b010d4b9ffbc8503cf493a6": {
-     "service": "instagram",
-     "status": "scheduled"
-    },
     "6b010d4c9ffbc8503cf49427": {
      "service": "youtube",
      "status": "scheduled"
@@ -77,125 +58,11 @@
    "slot": "2026-11-24T21:00:00+01:00",
    "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/missmikkaa_024299.mp4",
    "posts": {
-    "6b01fa7bd864a0110570ba4f": {
-     "service": "instagram",
-     "status": "scheduled"
-    },
     "6b01fa7cd5eabfb8cc5a4cab": {
      "service": "tiktok",
      "status": "scheduled"
     },
     "6b01fa7c846b0ee907356de0": {
-     "service": "youtube",
-     "status": "scheduled"
-    }
-   }
-  },
-  "speed_041070": {
-   "slot": "2026-11-25T17:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/speed_041070.mp4",
-   "posts": {
-    "6b01fa7d8bd84d5966165e68": {
-     "service": "instagram",
-     "status": "scheduled"
-    },
-    "6b01fa7dd864a0110570bb14": {
-     "service": "youtube",
-     "status": "scheduled"
-    }
-   }
-  },
-  "freyja_010294": {
-   "slot": "2026-11-25T21:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_010294.mp4",
-   "posts": {
-    "6b023662cc364169c1168289": {
-     "service": "instagram",
-     "status": "scheduled"
-    },
-    "6b023663cc364169c11682c8": {
-     "service": "tiktok",
-     "status": "scheduled"
-    },
-    "6b023664c72676f5e9efea01": {
-     "service": "youtube",
-     "status": "scheduled"
-    }
-   }
-  },
-  "zackrawrr_008404": {
-   "slot": "2026-11-26T17:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/zackrawrr_008404.mp4",
-   "posts": {
-    "6b0316edcc364169c16a16c5": {
-     "service": "instagram",
-     "status": "scheduled"
-    },
-    "6b0316eebf5d5a73b6a405e0": {
-     "service": "youtube",
-     "status": "scheduled"
-    }
-   }
-  },
-  "missmikkaa_004322": {
-   "slot": "2026-11-26T21:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/missmikkaa_004322.mp4",
-   "posts": {
-    "6b036d0dcc364169c18e08ee": {
-     "service": "instagram",
-     "status": "scheduled"
-    },
-    "6b036d0dbf5d5a73b6c88721": {
-     "service": "tiktok",
-     "status": "scheduled"
-    },
-    "6b036d0ed5eabfb8cce50ae7": {
-     "service": "youtube",
-     "status": "scheduled"
-    }
-   }
-  },
-  "kai_006447": {
-   "slot": "2026-11-27T17:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/kai_006447.mp4",
-   "posts": {
-    "6b03b718c72676f5e9828469": {
-     "service": "instagram",
-     "status": "scheduled"
-    },
-    "6b03b719a6de38de9eb77b9f": {
-     "service": "youtube",
-     "status": "scheduled"
-    }
-   }
-  },
-  "freyja_017113": {
-   "slot": "2026-11-27T21:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_017113.mp4",
-   "posts": {
-    "6b04f40d9a4bd32ca3e7fb39": {
-     "service": "instagram",
-     "status": "scheduled"
-    },
-    "6b04f40d6734c08a26a4754d": {
-     "service": "tiktok",
-     "status": "scheduled"
-    },
-    "6b04f40edb52b449cf19c5e7": {
-     "service": "youtube",
-     "status": "scheduled"
-    }
-   }
-  },
-  "speed_011576": {
-   "slot": "2026-11-28T17:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/speed_011576.mp4",
-   "posts": {
-    "6b04f40e9a4bd32ca3e7fc93": {
-     "service": "instagram",
-     "status": "scheduled"
-    },
-    "6b04f40ff0d7b1e0dea4b968": {
      "service": "youtube",
      "status": "scheduled"
     }
@@ -412,5 +279,19 @@
   "checked": "2026-11-24T03:18+01:00",
   "reels_waiting": 48,
   "booked": 9
- }
+ },
+ "tt_recent": [
+  "Kai Cenat",
+  "Freyja",
+  "Peanut",
+  "Freyja",
+  "Mikkaa"
+ ],
+ "tt_recent_gender": [
+  "m",
+  "f",
+  "m",
+  "f",
+  "f"
+ ]
 }

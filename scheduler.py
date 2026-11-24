@@ -1,7 +1,7 @@
 """GTA VI Clips cloud scheduler (runs hourly on GitHub Actions; the user's PC can be off).
 
 Keeps Buffer's free-plan queue (max 10 per channel) topped up from queue.json:
-  Instagram + YouTube at 17:00 and 21:00, TikTok at 21:00 (local time UTC+1).
+  YouTube at 17:00 and 21:00, TikTok at 21:00 (Instagram dropped 2026-11-24: account banned) (local time UTC+1).
   Never the same streamer twice in a row, prefer one not seen in the last 3, alternate male/female.
 After a slot has gone out on every network, the video is deleted from the GitHub release.
 State lives in state.json and is committed back by the workflow. Log: posting.log
@@ -15,6 +15,7 @@ REPO, TAG = "safouane666/gtaviclips-media", "media"
 TZ = dt.timezone(dt.timedelta(hours=1))
 CH = {"instagram": "6afde4d0ece6dfde5f0ebac1", "tiktok": "6afe0407ece6dfde5f111eec", "youtube": "6afde355ece6dfde5f0eac8b"}
 POST_HOURS, YT_HOURS, TT_HOURS = {17, 21}, {17, 21}, {21}
+SERVICES = ("tiktok", "youtube")   # Instagram account banned (user, 2026-11-24)
 QUEUE_MAX, MAX_AHEAD = 9, dt.timedelta(days=7)
 FINAL = ("sent", "error", "removed")
 CREATE = """mutation($input: CreatePostInput!) { createPost(input: $input) {
@@ -66,16 +67,19 @@ def check_posted(key, st, now):
             st["done"][rid] = b; del st["booked"][rid]
 
 
-def pick(queue, st):
+def pick(queue, st, tiktok):
+    """Variety rules (user 2026-11-24): never the same streamer twice in a row anywhere; on TikTok slots judge
+    variety against TikTok's own history (it only gets one post a day), elsewhere against all posts.
+    Avoid the last 3 streamers of that history and alternate male/female with its last post."""
     by = {}
     for r in queue.values():
         if r["id"] not in st["booked"] and r["id"] not in st["done"]: by.setdefault(r["streamer"], []).append(r)
     if not by: return None
-    recent = st["recent"]
-    allowed = [s for s in by if s not in recent[-3:]] or [s for s in by if s not in recent[-1:]] or list(by)
-    if recent:
-        last_g = st.get("recent_gender", [None])[-1]
-        other = [s for s in allowed if by[s][0]["gender"] != last_g]
+    hist, hist_g = (st["tt_recent"], st["tt_recent_gender"]) if tiktok else (st["recent"], st["recent_gender"])
+    last = st["recent"][-1:]
+    allowed = ([s for s in by if s not in hist[-3:] and s not in last] or [s for s in by if s not in last] or list(by))
+    if hist_g:
+        other = [s for s in allowed if by[s][0]["gender"] != hist_g[-1]]
         if other: allowed = other
     s = random.choices(allowed, weights=[len(by[a]) for a in allowed])[0]
     return random.choice(by[s])
@@ -93,7 +97,7 @@ def main():
     key = os.environ["BUFFER_API_KEY"]
     queue = json.loads(QUEUE.read_text(encoding="utf-8"))
     st = json.loads(STATE.read_text(encoding="utf-8"))
-    for k, d in (("taken", []), ("recent", []), ("recent_gender", []), ("booked", {}), ("done", {})): st.setdefault(k, d)
+    for k, d in (("taken", []), ("recent", []), ("recent_gender", []), ("booked", {}), ("done", {}), ("tt_recent", []), ("tt_recent_gender", [])): st.setdefault(k, d)
     now = dt.datetime.now(TZ)
     probe = next((pid for b in st["booked"].values() for pid in b["posts"]), None)
     if probe:   # proves the Buffer key works even when there is nothing to book this hour
@@ -106,11 +110,12 @@ def main():
                      if dt.datetime.fromisoformat(b["slot"]) > now and any(i.get("status") not in FINAL for i in b["posts"].values()))
         slot = next_slot(st, now)
         if future >= QUEUE_MAX or slot - now > MAX_AHEAD: break
-        r = pick(queue, st)
+        tt = slot.hour in TT_HOURS
+        r = pick(queue, st, tt)
         if not r: log("queue empty - nothing left to schedule"); break
         due = slot.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
         posts = {}
-        for svc in ("instagram", "tiktok", "youtube"):
+        for svc in SERVICES:
             if (svc == "youtube" and slot.hour not in YT_HOURS) or (svc == "tiktok" and slot.hour not in TT_HOURS): continue
             for _ in range(3):
                 res = (gql(key, CREATE, {"input": build(svc, r, due)}).get("data") or {}).get("createPost") or {}
@@ -123,6 +128,9 @@ def main():
         st["taken"] = (st["taken"] + [slot.isoformat()])[-500:]
         st["recent"] = (st["recent"] + [r["streamer"]])[-10:]
         st["recent_gender"] = (st["recent_gender"] + [r["gender"]])[-10:]
+        if "tiktok" in [p["service"] for p in posts.values()]:
+            st["tt_recent"] = (st["tt_recent"] + [r["streamer"]])[-10:]
+            st["tt_recent_gender"] = (st["tt_recent_gender"] + [r["gender"]])[-10:]
         log(f"slot {slot:%a %d %b %H:%M}: {r['id']} ({r['streamer']}) on {', '.join(p['service'] for p in posts.values())}")
     left = sum(1 for r in queue if r not in st["booked"] and r not in st["done"])
     st["status"] = {"checked": now.isoformat(timespec="minutes"), "reels_waiting": left, "booked": len(st["booked"])}
