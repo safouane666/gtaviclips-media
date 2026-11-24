@@ -30,11 +30,11 @@
   "2026-11-25T21:00:00+01:00",
   "2026-11-26T17:00:00+01:00",
   "2026-11-26T21:00:00+01:00",
-  "2026-11-27T17:00:00+01:00"
+  "2026-11-27T17:00:00+01:00",
+  "2026-11-27T21:00:00+01:00",
+  "2026-11-28T17:00:00+01:00"
  ],
  "recent": [
-  "Mikkaa",
-  "Speed",
   "Freyja",
   "Kai Cenat",
   "Mikkaa",
@@ -42,7 +42,9 @@
   "Freyja",
   "Asmongold",
   "Mikkaa",
-  "Kai Cenat"
+  "Kai Cenat",
+  "Freyja",
+  "Speed"
  ],
  "recent_gender": [
   "f",
@@ -57,38 +59,6 @@
   "m"
  ],
  "booked": {
-  "speed_038340": {
-   "slot": "2026-11-23T17:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/speed_038340.mp4",
-   "posts": {
-    "6b00c69420a2d09a0ab49bbc": {
-     "service": "instagram",
-     "status": "scheduled"
-    },
-    "6b00c6949ffbc8503cdc9cf6": {
-     "service": "youtube",
-     "status": "scheduled"
-    }
-   }
-  },
-  "freyja_008972": {
-   "slot": "2026-11-23T21:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_008972.mp4",
-   "posts": {
-    "6b00c69520a2d09a0ab49c3b": {
-     "service": "instagram",
-     "status": "scheduled"
-    },
-    "6b00c6969ffbc8503cdc9d6e": {
-     "service": "tiktok",
-     "status": "scheduled"
-    },
-    "6b00c696d9cbb430a1fe1b6b": {
-     "service": "youtube",
-     "status": "scheduled"
-    }
-   }
-  },
   "kai_018832": {
    "slot": "2026-11-24T17:00:00+01:00",
    "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/kai_018832.mp4",
@@ -194,6 +164,38 @@
      "status": "scheduled"
     },
     "6b03b719a6de38de9eb77b9f": {
+     "service": "youtube",
+     "status": "scheduled"
+    }
+   }
+  },
+  "freyja_017113": {
+   "slot": "2026-11-27T21:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_017113.mp4",
+   "posts": {
+    "6b04f40d9a4bd32ca3e7fb39": {
+     "service": "instagram",
+     "status": "scheduled"
+    },
+    "6b04f40d6734c08a26a4754d": {
+     "service": "tiktok",
+     "status": "scheduled"
+    },
+    "6b04f40edb52b449cf19c5e7": {
+     "service": "youtube",
+     "status": "scheduled"
+    }
+   }
+  },
+  "speed_011576": {
+   "slot": "2026-11-28T17:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/speed_011576.mp4",
+   "posts": {
+    "6b04f40e9a4bd32ca3e7fc93": {
+     "service": "instagram",
+     "status": "scheduled"
+    },
+    "6b04f40ff0d7b1e0dea4b968": {
      "service": "youtube",
      "status": "scheduled"
     }
@@ -362,11 +364,53 @@
      "error": "It looks like Buffer has lost authorization to post on your behalf. Please refresh your channel to resume scheduling."
     }
    }
+  },
+  "speed_038340": {
+   "slot": "2026-11-23T17:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/speed_038340.mp4",
+   "posts": {
+    "6b00c69420a2d09a0ab49bbc": {
+     "service": "instagram",
+     "status": "error",
+     "link": null,
+     "error": "It looks like Buffer has lost authorization to post on your behalf. Please refresh your channel to resume scheduling."
+    },
+    "6b00c6949ffbc8503cdc9cf6": {
+     "service": "youtube",
+     "status": "sent",
+     "link": "https://www.youtube.com/shorts/rqiMXwQuimg",
+     "error": null
+    }
+   }
+  },
+  "freyja_008972": {
+   "slot": "2026-11-23T21:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_008972.mp4",
+   "posts": {
+    "6b00c69520a2d09a0ab49c3b": {
+     "service": "instagram",
+     "status": "error",
+     "link": null,
+     "error": "It looks like Buffer has lost authorization to post on your behalf. Please refresh your channel to resume scheduling."
+    },
+    "6b00c6969ffbc8503cdc9d6e": {
+     "service": "tiktok",
+     "status": "sent",
+     "link": "https://tiktok.com/@gtaviclips782/video/7711459708841790772",
+     "error": null
+    },
+    "6b00c696d9cbb430a1fe1b6b": {
+     "service": "youtube",
+     "status": "sent",
+     "link": "https://www.youtube.com/shorts/yidfMfRjeuk",
+     "error": null
+    }
+   }
   }
  },
  "status": {
-  "checked": "2026-11-23T15:52+01:00",
-  "reels_waiting": 50,
+  "checked": "2026-11-24T03:18+01:00",
+  "reels_waiting": 48,
   "booked": 9
  }
 }
