@@ -34,10 +34,10 @@
   "2026-11-27T21:00:00+01:00",
   "2026-11-28T17:00:00+01:00",
   "2026-11-28T21:00:00+01:00",
-  "2026-11-29T17:00:00+01:00"
+  "2026-11-29T17:00:00+01:00",
+  "2026-11-29T21:00:00+01:00"
  ],
  "recent": [
-  "Mikkaa",
   "Speed",
   "Kai Cenat",
   "Freyja",
@@ -46,10 +46,10 @@
   "Freyja",
   "Kai Cenat",
   "Speed",
-  "Mikkaa"
+  "Mikkaa",
+  "Kai Cenat"
  ],
  "recent_gender": [
-  "f",
   "m",
   "m",
   "f",
@@ -58,19 +58,10 @@
   "f",
   "m",
   "m",
-  "f"
+  "f",
+  "m"
  ],
  "booked": {
-  "speed_035508": {
-   "slot": "2026-11-25T17:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/speed_035508.mp4",
-   "posts": {
-    "6b0592de9dcfd388092456cc": {
-     "service": "youtube",
-     "status": "scheduled"
-    }
-   }
-  },
   "kai_005262": {
    "slot": "2026-11-25T21:00:00+01:00",
    "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/kai_005262.mp4",
@@ -162,6 +153,20 @@
    "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/missmikkaa_003249.mp4",
    "posts": {
     "6b061e47493dfdd145ff052d": {
+     "service": "youtube",
+     "status": "scheduled"
+    }
+   }
+  },
+  "kai_006447": {
+   "slot": "2026-11-29T21:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/kai_006447.mp4",
+   "posts": {
+    "6b0735cfc06d6883dada0bfa": {
+     "service": "tiktok",
+     "status": "scheduled"
+    },
+    "6b0735cf636c52154b9a9bc1": {
      "service": "youtube",
      "status": "scheduled"
     }
@@ -402,11 +407,23 @@
      "error": null
     }
    }
+  },
+  "speed_035508": {
+   "slot": "2026-11-25T17:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/speed_035508.mp4",
+   "posts": {
+    "6b0592de9dcfd388092456cc": {
+     "service": "youtube",
+     "status": "error",
+     "link": null,
+     "error": "The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later."
+    }
+   }
   }
  },
  "status": {
-  "checked": "2026-11-25T09:47+01:00",
-  "reels_waiting": 46,
+  "checked": "2026-11-25T20:23+01:00",
+  "reels_waiting": 45,
   "booked": 9
  },
  "tt_recent": [
@@ -418,7 +435,8 @@
   "Kai Cenat",
   "Asmongold",
   "Freyja",
-  "Speed"
+  "Speed",
+  "Kai Cenat"
  ],
  "tt_recent_gender": [
   "m",
@@ -429,6 +447,7 @@
   "m",
   "m",
   "f",
+  "m",
   "m"
  ]
 }
