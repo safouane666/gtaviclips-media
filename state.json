@@ -35,10 +35,10 @@
   "2026-11-28T17:00:00+01:00",
   "2026-11-28T21:00:00+01:00",
   "2026-11-29T17:00:00+01:00",
-  "2026-11-29T21:00:00+01:00"
+  "2026-11-29T21:00:00+01:00",
+  "2026-11-30T17:00:00+01:00"
  ],
  "recent": [
-  "Speed",
   "Kai Cenat",
   "Freyja",
   "Asmongold",
@@ -47,11 +47,11 @@
   "Kai Cenat",
   "Speed",
   "Mikkaa",
-  "Kai Cenat"
+  "Kai Cenat",
+  "Freyja"
  ],
  "recent_gender": [
   "m",
-  "m",
   "f",
   "m",
   "f",
@@ -59,23 +59,10 @@
   "m",
   "m",
   "f",
-  "m"
+  "m",
+  "f"
  ],
  "booked": {
-  "kai_005262": {
-   "slot": "2026-11-25T21:00:00+01:00",
-   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/kai_005262.mp4",
-   "posts": {
-    "6b0592dfa9e62b5051a7a377": {
-     "service": "tiktok",
-     "status": "scheduled"
-    },
-    "6b0592dfa9e62b5051a7a3a2": {
-     "service": "youtube",
-     "status": "scheduled"
-    }
-   }
-  },
   "freyja_010294": {
    "slot": "2026-11-26T17:00:00+01:00",
    "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_010294.mp4",
@@ -167,6 +154,16 @@
      "status": "scheduled"
     },
     "6b0735cf636c52154b9a9bc1": {
+     "service": "youtube",
+     "status": "scheduled"
+    }
+   }
+  },
+  "freyja_007871": {
+   "slot": "2026-11-30T17:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/freyja_007871.mp4",
+   "posts": {
+    "6b079f4aa791bea1b24a4dc7": {
      "service": "youtube",
      "status": "scheduled"
     }
@@ -419,11 +416,29 @@
      "error": "The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later."
     }
    }
+  },
+  "kai_005262": {
+   "slot": "2026-11-25T21:00:00+01:00",
+   "url": "https://github.com/safouane666/gtaviclips-media/releases/download/media/kai_005262.mp4",
+   "posts": {
+    "6b0592dfa9e62b5051a7a377": {
+     "service": "tiktok",
+     "status": "sent",
+     "link": "https://www.tiktok.com/@gtaviclips782/video/7712202122426715444?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+     "error": null
+    },
+    "6b0592dfa9e62b5051a7a3a2": {
+     "service": "youtube",
+     "status": "sent",
+     "link": "https://www.youtube.com/shorts/LbltNQsMvUk",
+     "error": null
+    }
+   }
   }
  },
  "status": {
-  "checked": "2026-11-25T20:23+01:00",
-  "reels_waiting": 45,
+  "checked": "2026-11-26T03:53+01:00",
+  "reels_waiting": 44,
   "booked": 9
  },
  "tt_recent": [
